@@ -1,0 +1,131 @@
+body {
+    background-color: beige;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.photo-card img {
+    width: 300px;
+    height: 200px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    /* padding-left: 20px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-card {
+    border: 1px solid rgba(57, 50, 50, 0.8);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info {
+    padding: 5px;
+    background-color: rgba(232, 227, 217, 0.8);
+    color: #0f0f0f;
+}
+
+.info-item {
+    margin: 5px 0;
+}
+
+.load-more {
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4f6d54;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form {
+    padding: 20px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    max-width: 400px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-form input[type='text'],
+.search-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.search-form input[type='text'] {
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #ccc;
+}
+
+.search-form button {
+    margin-left: 2px;
+    background-color: #4f6d54;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #4f6d54;
+}
+
+.search-select {
+    flex: 1;
+    max-width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    appearance: none;
+    cursor: pointer;
+}
+
+.search-select::-ms-expand {
+    display: none;
+}
+
+.search-select::after {
+    content: '\25BC';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-select:hover {
+    border-color: #4f6d54;
+}
+
+.search-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4f6d54;
+}
